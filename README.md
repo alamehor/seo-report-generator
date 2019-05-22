@@ -17,7 +17,7 @@ Features:
 
 Project is realised for my training OOP PHP.
 
-# Local/web server is required!
+Local/web server is required!
 
 
 
