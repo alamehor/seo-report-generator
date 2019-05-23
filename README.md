@@ -6,7 +6,7 @@ Project is realised for my training OOP PHP.
 
 **Local/web server is required!**
 
-##Features:
+## Features:
 * **User panel**
 	- Add new report
 		- Quick checking ready affirmatives saved in associative array.
