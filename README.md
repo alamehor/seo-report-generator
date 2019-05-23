@@ -2,7 +2,7 @@
 
 It's an automation of work with libre or microsoft office by many hours, just to export a pdf with specification of SEO optimisation that I make for a clients every month.
 
-Project is realised for my training OOP PHP.
+Project is realised for my training with OOP PHP and Smarty template engine.
 
 **Local/web server is required!**
 
