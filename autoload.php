@@ -8,7 +8,7 @@ class MyAutoloader
 
   public static function Libs($class)
   {
-    
+    require_once("libs/smarty/Smarty.class.php");
   }
 
   public static function Pages($class)

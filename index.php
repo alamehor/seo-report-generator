@@ -1,7 +1,6 @@
 <?php
 
-require "autoload.php";
-require_once("libs/smarty/Smarty.class.php");
+require_once("autoload.php");
 
 $pagge = new Page;
 
