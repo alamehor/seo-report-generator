@@ -1,36 +1,9 @@
 <?php
-// Add to constructor
-require_once('libs/smarty/Smarty.class.php');
-$smarty = new Smarty();
-$smarty->template_dir = 'views';
-$smarty->compile_dir = 'tmp';
-$smarty->cache_dir = 'cache';
 
-$domain = $_SERVER['HTTP_HOST'];
-$smarty->assign('domain', $domain);
+require "autoload.php";
+require_once("libs/smarty/Smarty.class.php");
 
-$smarty->assign('nav', array(
-  'home' => 'Home',
-  'new' => 'Add new report',
-  'all' => 'All reports',
-  'my' => 'My reports',
-  'users' => 'Manage users',
-  'categories' => 'Manage categories',
-  'company' => 'Your company'
-));
-$smarty->assign('author', array(
-  'name' => 'Krzysztof Król',
-  'website' => 'https://royalcode.eu',
-  'domain' => 'royalcode.eu',
-  'by' => 'By royalcode.eu',
-  'github' => 'https://github.com/Krzysztof-Krol',
-  'like_it' => 'Do you like it?',
-  'smile' => ':-)',
-  'donate' => array(
-    'link' => 'donate-me.php',
-    'encouragement' => 'Donate me'
-  )
-));
+$pagge = new Page;
 
 $smarty->assign('title', 'SEO report generator');
 $smarty->assign('recent', array(
@@ -45,6 +18,7 @@ $smarty->assign('recent', array(
     'date' => '2019.06.26',
     'category' => 'Tech Optimisation',
     'pdf' => 'Export to PDF',
+    'duplicate' => 'Duplicate',
     'edit' => 'Edit',
     'remove' => 'Remove'
   )
