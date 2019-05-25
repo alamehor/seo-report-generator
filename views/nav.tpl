@@ -18,7 +18,7 @@
   </aside>
   <div class="position-absolute footer pl-3 pr-3">
     <footer class="w-100 p-3 bg-white text-right border-top-delicate">
-      <a class="text-dark" href="{$author.website}">{$author.domain}</a><br>
+      <a class="text-dark" href="{$author.website}">{$author.domain}</a> {$author.year}<br>
       <span class="text-dark">{$author.like_it}</span>
       <a href="{$author.donate.link}">{$author.donate.encouragement}</a>
       <span class="text-dark">{$author.smile}</span>

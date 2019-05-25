@@ -32,28 +32,19 @@
                             <th scope="col">{$recent.head.name}</th>
                             <th scope="col">{$recent.head.date}</th>
                             <th scope="col">{$recent.head.category}</th>
-                            <th scope="col">{* Export to PDF *}</th>
-                            <th scope="col">{* Duplicate *}</th>
-                            <th scope="col">{* Edit *}</th>
-                            <th scope="col">{* Remove *}</th>
+                            <th scope="col">{* Options *}</th>
                           </tr>
                         </thead>
                         <tbody>
-                          {for $i=1 to 9}
+                          {for $i=1 to $quantity}
                             <tr>
                               <td class="align-middle">{$recent.body.name}</td>
                               <td class="align-middle">{$recent.body.date}</td>
                               <td class="align-middle">{$recent.body.category}</td>
                               <td>
                                 <a href="#" class="btn btn-outline-success">{$recent.body.pdf}</a>
-                              </td>
-                              <td>
                                 <a href="#" class="btn btn-outline-primary">{$recent.body.duplicate}</a>
-                              </td>
-                              <td>
                                 <a href="#" class="btn btn-outline-primary">{$recent.body.edit}</a>
-                              </td>
-                              <td>
                                 <a href="#" class="btn btn-outline-danger">{$recent.body.remove}</a>
                               </td>
                             </tr>

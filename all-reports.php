@@ -7,7 +7,7 @@
  */
 include("autoload.php");
 
-$smarty->assign('title', 'SEO report generator');
+$smarty->assign('title', 'All reports - SEO report generator');
 $smarty->assign('recent', array(
   'head' => array(
     'header' => 'Recent reports',
@@ -26,7 +26,7 @@ $smarty->assign('recent', array(
   )
 ));
 
-$smarty->assign('quantity', 10);
+$smarty->assign('quantity', 150);
 
 $smarty->display('home.tpl');
 
